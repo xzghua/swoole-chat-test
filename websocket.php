@@ -6,7 +6,7 @@
  * Time: 上午11:51
  */
 
-    $pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=chat;port=3306','root','123456');
+    $pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=chat;port=3306','root','123456iphpt');
     $redis = new Redis();
     $result = $redis->connect('127.0.0.1', 6379);
 

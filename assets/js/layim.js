@@ -6,7 +6,7 @@
  @Blog: http://sentsin.com
 
  */
-var wsServer = 'ws://127.0.0.1:9502';
+var wsServer = 'ws://114.215.154.238:9502';
 var websocket = new WebSocket(wsServer);
 websocket.onopen = function (evt) {
     console.log("别没事就打开什么firbug,看啥看啊！");
