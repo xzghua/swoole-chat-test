@@ -1,0 +1,31 @@
+{
+  "status": 1,
+  "msg": "ok",
+  "data": [
+    {
+      "name": "PHP交流群",
+      "nums": 36,
+      "id": 1,
+      "item": [
+        {
+          "id": "103",
+          "name": "PHP技术交流",
+          "face": "http://tp3.sinaimg.cn/1820711170/180/1286855219/1"
+        }
+      ]
+    },
+    {
+      "name": "PHP交流群1",
+      "nums": 37,
+      "id": 2,
+      "item": [
+        {
+          "id": "102",
+          "name": "PHP技术交流",
+          "face": "http://tp3.sinaimg.cn/1820711170/180/1286855219/1"
+        }
+      ]
+    }
+
+  ]
+}
