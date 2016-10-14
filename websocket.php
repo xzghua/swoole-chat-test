@@ -10,7 +10,7 @@
     $redis = new Redis();
     $result = $redis->connect('127.0.0.1', 6379);
 
-    $ws = new swoole_websocket_server("114.215.154.238", 9502);
+    $ws = new swoole_websocket_server("114.215.154.238", 9501);
 
     $time = date('Y-m-d H:i:s',time());
     $sql = "insert into chat (content,user_name,created_at,user_face)values(?, ?,'{$time}',?)";
