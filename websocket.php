@@ -6,11 +6,11 @@
  * Time: 上午11:51
  */
 
-    $pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=chat;port=3306','root','123456iphpt');
+    $pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=chat;port=3306','root','123456');
     $redis = new Redis();
     $result = $redis->connect('127.0.0.1', 6379);
 
-    $ws = new swoole_websocket_server("114.215.154.238", 9501);
+    $ws = new swoole_websocket_server("127.0.0.1", 9501);
 
     $time = date('Y-m-d H:i:s',time());
     $sql = "insert into chat (content,user_name,created_at,user_face)values(?, ?,'{$time}',?)";
