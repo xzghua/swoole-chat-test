@@ -6,7 +6,7 @@
  @Blog: http://sentsin.com
 
  */
-var wsServer = 'ws://0.0.0.0:9502';
+var wsServer = 'ws://114.215.154.238:9502';
 
 var websocket = new WebSocket(wsServer);
 websocket.onopen = function (evt) {
