@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input  type="text" id="content">
+<button  onclick="websocket.send( document.getElementById('content').value )">发送</button>
+</body>
+<script>
+    var wsServer = 'ws://114.215.154.238:9502';
+    var websocket = new WebSocket(wsServer);
+    websocket.onopen = function (evt) {
+        console.log("这样就是链接上了呗");
+    };
+
+    websocket.onclose = function (evt) {
+        console.log("Disconnected");
+    };
+
+    websocket.onmessage = function (evt) {
+        console.log('Retrieved data from server: ' + evt.data);
+    };
+
+    websocket.onerror = function (evt, e) {
+        console.log('Error occured: ' + evt.data);
+    };
+
+</script>
+</html>
